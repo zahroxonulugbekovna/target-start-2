@@ -1,0 +1,718 @@
+<title>Target Start</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Target Start: biznes egalari uchun Meta Ads (Instagram va Facebook) target kursi. 4 hafta, onlayn va oflayn. Ustoz: Zahro, 3 yillik amaliy tajriba.">
+<meta property="og:title" content="Target Start · reklamani o'zingiz yoqing">
+<meta property="og:description" content="Biznes egalari uchun target kursi: onlayn Standart, onlayn Premium va oflayn. 4 hafta, 6 oy qo'llab-quvvatlash.">
+<meta property="og:image" content="img/zahro-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: och iliq qog'oz fon, oq kartalar, qahva-qora matn; oltin faqat urg'ularda. Tariflar va yakuniy CTA och bej bandda */
+:root{
+  --bg:#f8f5ef;
+  --surface:#ffffff;
+  --ink:#1c1813;
+  --muted:#6e6458;
+  --line:#e7dfd2;
+  --gold:#b6852a;
+  --gold-soft:#f4ead6;
+  --gold-hi:#e9c77a;
+  --band:#f1e7d6;
+  --dark-2:#ffffff;
+  --dark-line:#e7dfd2;
+  --on-dark:#1c1813;
+  --on-dark-muted:#6e6458;
+  --ok:#2f9e6b;
+  --no:#c4553b;
+  --gold-grad:linear-gradient(180deg,#f6dd96 0%,#d6a548 70%,#efc86e 100%);
+  --display:"Montserrat",system-ui,sans-serif;
+  --body:"Manrope",system-ui,sans-serif;
+  --r:20px;
+  --wrap:1160px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4.4vw,50px)}
+h3{font-size:19px;letter-spacing:-.01em;line-height:1.25}
+p{margin:0}
+.acc{color:var(--gold)}
+.label{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.label::before{content:"";width:18px;height:2px;background:currentColor;border-radius:2px}
+.sec{padding-block:clamp(72px,9vw,120px)}
+.sec.alt{background:var(--surface)}
+.head{display:grid;gap:14px;margin-bottom:clamp(36px,5vw,56px);max-width:720px}
+.head p{color:var(--muted);font-size:18px;max-width:60ch}
+.head.c{margin-inline:auto;text-align:center;justify-items:center}
+.ph{color:var(--gold);background:var(--gold-soft);border:1px dashed var(--gold);border-radius:6px;padding:0 .35em;font-style:normal}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:700;font-size:15px;text-decoration:none;padding:15px 26px;min-height:50px;border-radius:999px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s}
+.btn-gold{background:var(--gold-grad);color:#1a1307;box-shadow:0 10px 28px -12px rgba(182,133,42,.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(182,133,42,.8)}
+.btn-ink{background:var(--ink);color:var(--surface)}
+.btn-ink:hover{transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-line:hover{border-color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(248,245,239,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:900;font-size:18px;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.logo i{width:30px;height:30px;border-radius:9px;background:var(--gold-soft);display:grid;place-items:center}
+.logo i::before{content:"";width:12px;height:12px;border-radius:50%;border:2.5px solid var(--gold-hi);border-color:var(--gold);box-shadow:0 0 0 4px var(--gold-soft),0 0 0 6px var(--gold)}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:15px;font-weight:600;color:var(--muted);transition:color .2s}
+.nav ul a:hover{color:var(--ink)}
+.nav .btn{padding:10px 20px;min-height:42px;font-size:14px}
+@media (max-width:920px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(40px,6vw,80px) clamp(56px,7vw,96px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,6vw,80px);align-items:center}
+.hero-copy{display:grid;gap:24px;min-width:0}
+.pill{justify-self:start;max-width:100%;display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 8px;font-size:14px;font-weight:600}
+.pill b{white-space:nowrap;background:var(--gold-soft);color:var(--gold);font-family:var(--display);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.hero h1{font-size:clamp(42px,6.6vw,80px);font-weight:900;letter-spacing:-.035em;line-height:1}
+.hero h1 .u{position:relative;white-space:nowrap;color:var(--gold)}
+.hero h1 .u svg{position:absolute;left:0;right:0;bottom:-.12em;width:100%;height:.28em;color:var(--gold-hi)}
+.hero-lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:50ch}
+.hero-lead b{color:var(--ink);font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--muted)}
+.proof .faces{display:flex}
+.proof .faces span{width:34px;height:34px;border-radius:50%;border:2px solid var(--bg);margin-left:-10px;background:var(--gold-soft);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:13px;color:var(--gold)}
+.proof .faces span:first-child{margin-left:0}
+.proof b{color:var(--ink)}
+
+.visual{position:relative;justify-self:end;width:100%;max-width:420px}
+.photo{position:relative;margin:0}
+.photo .circ{border-radius:240px 240px 24px 24px;overflow:hidden;aspect-ratio:4/5;background:#7d7a79;box-shadow:0 40px 70px -40px rgba(28,24,19,.55)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.photo figcaption{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 18px;white-space:nowrap;font-size:13px;color:var(--muted);box-shadow:0 14px 30px -18px rgba(28,24,19,.4)}
+.photo figcaption b{font-family:var(--display);color:var(--ink);margin-right:6px}
+.float{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 50px -24px rgba(28,24,19,.35);padding:14px 16px;font-size:13px}
+.float.stat{left:-40px;top:12%;display:grid;gap:2px}
+.float.stat b{font-family:var(--display);font-size:28px;font-weight:900;line-height:1;color:var(--ink)}
+.float.stat span{color:var(--muted)}
+.float.quote{right:-36px;bottom:20%;max-width:220px;display:grid;gap:6px}
+.float.quote p{font-weight:600;color:var(--ink);line-height:1.35}
+.float.quote span{color:var(--muted);font-size:12px}
+.stars{color:var(--gold);letter-spacing:2px;font-size:13px}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .visual{justify-self:center;max-width:360px;margin-top:8px}
+  .float.stat{left:-12px}
+  .float.quote{right:-12px;bottom:10%;max-width:190px}
+}
+
+/* trust strip */
+.strip{border-block:1px solid var(--line);background:var(--surface)}
+.strip ul{list-style:none;margin:0 auto;padding-block:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.strip li{padding:26px 20px;display:grid;gap:2px;border-left:1px solid var(--line)}
+.strip li:first-child{border-left:0;padding-left:0}
+.strip b{font-family:var(--display);font-weight:900;font-size:clamp(26px,3vw,34px);letter-spacing:-.02em;line-height:1.1}
+.strip span{color:var(--muted);font-size:14px}
+@media (max-width:760px){.strip ul{grid-template-columns:1fr 1fr}.strip li:nth-child(3){border-left:0;padding-left:0}.strip li:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* pains */
+.pains{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pain{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;display:grid;gap:12px;align-content:start;min-width:0}
+.pain .ic{width:40px;height:40px;border-radius:12px;background:var(--gold-soft);color:var(--gold);display:grid;place-items:center}
+.pain .ic svg{width:20px;height:20px}
+.pain h3{font-size:18px}
+.pain p{color:var(--muted);font-size:15px}
+.turn{margin-top:28px;background:var(--gold-soft);color:var(--ink);border-radius:var(--r);padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.turn p{font-family:var(--display);font-weight:800;font-size:clamp(20px,2.4vw,26px);letter-spacing:-.01em;line-height:1.2;max-width:34ch}
+.turn p span{color:var(--gold)}
+@media (max-width:980px){.pains{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pains{grid-template-columns:1fr}}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+.fit>div{border-radius:var(--r);padding:32px 30px;display:grid;gap:20px;align-content:start;min-width:0;border:1px solid var(--line);background:var(--surface)}
+.fit .yes{border-color:rgba(47,158,107,.35)}
+.fit ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.fit li{position:relative;padding-left:36px}
+.fit li::before{position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:13px;line-height:24px;text-align:center}
+.fit .yes li::before{content:"✓";background:rgba(47,158,107,.12);color:var(--ok)}
+.fit .no li::before{content:"✕";background:rgba(196,85,59,.1);color:var(--no)}
+.fit .no li{color:var(--muted)}
+.fit .no a{color:var(--gold);font-weight:600}
+@media (max-width:860px){.fit{grid-template-columns:1fr}}
+
+/* outcomes */
+.outs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;list-style:none;margin:0;padding:0}
+.outs li{display:grid;gap:8px;align-content:start;padding:24px 22px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);min-width:0}
+.outs li::before{content:"";width:28px;height:28px;border-radius:50%;background:var(--gold-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b6852a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/14px no-repeat;margin-bottom:6px}
+.outs b{font-family:var(--display);font-weight:700;font-size:18px;line-height:1.25}
+.outs span{color:var(--muted);font-size:15px}
+@media (max-width:860px){.outs{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.outs{grid-template-columns:1fr}}
+
+/* program */
+.prog{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,5vw,64px);align-items:start}
+.prog>*{min-width:0}
+.prog-side{display:grid;gap:20px;position:sticky;top:100px}
+.prog-side p{color:var(--muted)}
+.note{background:var(--gold-soft);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--ink)}
+.mods{display:grid;gap:12px;counter-reset:m}
+.mod{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);counter-increment:m;transition:border-color .2s,box-shadow .2s}
+.mod[open]{border-color:rgba(182,133,42,.5);box-shadow:0 20px 40px -30px rgba(28,24,19,.4)}
+.mod summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr 32px;gap:16px;align-items:center;padding:22px 24px}
+.mod summary::-webkit-details-marker{display:none}
+.mod summary::before{content:counter(m);width:44px;height:44px;border-radius:12px;background:var(--gold-soft);color:var(--gold);font-family:var(--display);font-weight:900;font-size:18px;display:grid;place-items:center}
+.mod summary::after{content:"+";width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:20px;color:var(--muted);transition:transform .25s}
+.mod[open] summary::after{transform:rotate(45deg)}
+.mod .wk{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;font-family:var(--body)}
+.mod h3{font-size:19px}
+.mod ul{list-style:none;margin:0;padding:0 24px 24px 84px;display:grid;gap:16px}
+.mod li{color:var(--muted);font-size:15px}
+.mod li b{display:block;color:var(--ink);font-weight:700;font-size:16px;margin-bottom:2px}
+@media (max-width:860px){.prog{grid-template-columns:1fr}.prog-side{position:static}}
+@media (max-width:560px){.mod summary{padding:18px;gap:12px}.mod summary::before{width:38px;height:38px;font-size:16px}.mod ul{padding:0 18px 20px 18px}}
+
+/* reviews */
+.vrev{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:clamp(24px,4vw,56px);align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(16px,2.5vw,28px);margin-bottom:16px}
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.vids figure{margin:0;display:grid;gap:8px;min-width:0}
+.vids video{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:16px;background:var(--gold-soft)}
+.vids figcaption{font-size:13px;color:var(--muted);text-align:center}
+.vrev-text{display:grid;gap:14px;min-width:0}
+.vrev-text h3{font-size:clamp(22px,2.6vw,30px)}
+.vrev-text p{color:var(--muted);max-width:44ch}
+@media (max-width:860px){.vrev{grid-template-columns:1fr}}
+.revs{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:start}
+.rev{display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);min-width:0;transition:transform .3s,box-shadow .3s}
+.rev:hover{transform:translateY(-4px);box-shadow:0 24px 40px -28px rgba(28,24,19,.5)}
+.rev img{display:block;width:100%;height:auto}
+@media (max-width:1100px){.revs{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.revs{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.revs{grid-template-columns:1fr}}
+
+/* tariffs — dark band */
+.dark{background:var(--band);color:var(--ink)}
+.dark .head p{color:var(--on-dark-muted)}
+
+.tarifs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.tarif{border:1px solid var(--dark-line);border-radius:24px;padding:32px 28px;display:grid;grid-template-rows:auto auto auto 1fr auto;gap:18px;background:var(--dark-2);min-width:0;position:relative}
+.tarif.best{background:var(--surface);color:var(--ink);border:2px solid var(--gold);box-shadow:0 30px 60px -30px rgba(182,133,42,.55)}
+.tarif .badge{position:absolute;top:-13px;left:28px;background:var(--gold-grad);color:#1a1307;font-family:var(--display);font-weight:800;font-size:12px;padding:5px 14px;border-radius:999px;letter-spacing:.02em}
+.tarif .kind{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--on-dark-muted)}
+.tarif.best .kind{color:var(--gold)}
+.tarif h3{font-size:30px;font-weight:900}
+.tarif .lead{color:var(--on-dark-muted);font-size:15px}
+.tarif.best .lead{color:var(--muted)}
+.tarif ul{margin:0;padding:0;list-style:none;display:grid;gap:12px;font-size:15px;align-content:start}
+.tarif li{position:relative;padding-left:28px}
+.tarif li::before{content:"✓";position:absolute;left:0;top:0;color:var(--gold);font-weight:800}
+.tarif.best li::before{color:var(--gold)}
+.tarif li.off{color:var(--on-dark-muted);opacity:.7}
+.tarif li.off::before{content:"–"}
+.tarif .foot{display:grid;gap:16px;border-top:1px solid var(--dark-line);padding-top:20px}
+.tarif.best .foot{border-color:var(--line)}
+.tarif .price{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:14px;color:var(--on-dark-muted)}
+.tarif.best .price{color:var(--muted)}
+.tarif .price b{font-family:var(--display);font-weight:900;font-size:24px;color:inherit}
+.tarif .btn{width:100%}
+.tarif .btn-line{color:var(--on-dark);border-color:var(--dark-line)}
+.tarif .btn-line:hover{border-color:var(--ink)}
+
+.tarif.best .ph{color:var(--gold);background:var(--gold-soft);border-color:var(--gold)}
+.common{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;color:var(--on-dark-muted);font-size:15px}
+.common span::before{content:"✓ ";color:var(--gold);font-weight:800}
+@media (max-width:980px){.tarifs{grid-template-columns:1fr;max-width:540px;margin-inline:auto;gap:28px}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:s;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;gap:10px;align-content:start;min-width:0;position:relative}
+.steps li::before{content:counter(s);width:46px;height:46px;border-radius:50%;background:var(--surface);border:1.5px solid var(--gold);color:var(--gold);font-family:var(--display);font-weight:900;font-size:18px;display:grid;place-items:center;position:relative;z-index:1}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:46px;right:-16px;top:23px;height:1.5px;background:var(--line)}
+.steps p{color:var(--muted);font-size:15px}
+@media (max-width:980px){.steps{grid-template-columns:1fr;gap:24px}.steps li{grid-template-columns:46px 1fr;column-gap:16px}.steps li::before{grid-row:span 2}.steps li:not(:last-child)::after{left:22px;right:auto;top:46px;bottom:-24px;width:1.5px;height:auto}}
+
+/* teacher */
+.teacher{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,5vw,72px);align-items:center}
+.teacher-photo{position:relative;max-width:400px;width:100%}
+.teacher-photo .circ{border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:#7d7a79}
+.teacher-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.teacher-photo .tag{position:absolute;left:16px;bottom:16px;background:var(--surface);border-radius:12px;padding:10px 14px;font-size:13px;box-shadow:0 14px 30px -16px rgba(28,24,19,.4)}
+.teacher-photo .tag b{display:block;font-family:var(--display);font-size:16px}
+.teacher-text{display:grid;gap:18px;min-width:0}
+.teacher-text p{color:var(--muted);max-width:60ch}
+.teacher-text strong{color:var(--ink)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}
+.facts div{background:var(--bg);border-radius:14px;padding:16px;display:grid;gap:2px}
+.facts b{font-family:var(--display);font-weight:900;font-size:26px}
+.facts span{font-size:13px;color:var(--muted)}
+@media (max-width:860px){.teacher{grid-template-columns:1fr}.teacher-photo{max-width:320px}}
+@media (max-width:420px){.facts{grid-template-columns:1fr 1fr}.facts div:last-child{grid-column:span 2}}
+
+/* gallery */
+.gal{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
+.gal a{scroll-snap-align:start;display:block;border-radius:16px;overflow:hidden}
+.gal img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;transition:transform .5s}
+.gal a:hover img{transform:scale(1.04)}
+.gal::-webkit-scrollbar{height:6px}.gal::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,5vw,64px);align-items:start}
+.faq-grid>*{min-width:0}
+.faq{display:grid;gap:10px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.faq summary{list-style:none;cursor:pointer;padding:20px 56px 20px 22px;font-family:var(--display);font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--gold);transition:transform .25s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{padding:0 22px 20px;color:var(--muted)}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+/* signup — dark band */
+.signup{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:start}
+.signup>*{min-width:0}
+.signup h2{font-size:clamp(34px,5vw,60px)}
+.signup .intro{display:grid;gap:20px}
+.signup .intro p{color:var(--on-dark-muted);font-size:18px}
+.links{display:grid;gap:10px;margin-top:8px}
+.links a,.links div{background:var(--surface);display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--dark-line);border-radius:14px;text-decoration:none;transition:border-color .2s;min-width:0}
+.links a:hover{border-color:var(--gold)}
+.links span{color:var(--on-dark-muted);font-size:14px}
+.links b{font-weight:600;overflow-wrap:anywhere;text-align:right}
+form{background:var(--surface);color:var(--ink);border-radius:24px;box-shadow:0 30px 60px -36px rgba(28,24,19,.35);padding:clamp(24px,3vw,36px);display:grid;gap:16px}
+form h3{font-size:22px}
+label{font-size:14px;font-weight:600;color:var(--ink);display:grid;gap:6px}
+label small{font-weight:500;color:var(--muted)}
+input,select{font:inherit;font-size:16px;font-weight:500;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;width:100%}
+input:focus,select:focus{outline:none;border-color:var(--gold);background:var(--surface)}
+input[aria-invalid="true"]{border-color:var(--no)}
+.err{color:var(--no);font-size:13px}
+.msg{font-size:15px;border-radius:12px;padding:14px 16px;background:var(--gold-soft)}
+.msg.good{background:rgba(47,158,107,.12)}
+.msg b{color:var(--ink)}
+.fine{font-size:13px;color:var(--muted);text-align:center}
+@media (max-width:860px){.signup{grid-template-columns:1fr}}
+
+footer{background:var(--bg);color:var(--muted);border-top:1px solid var(--line);padding-block:26px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* phone sticky CTA */
+.mcta{display:none}
+@media (max-width:700px){
+  .mcta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(248,245,239,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mcta .btn{width:100%}
+  footer{padding-bottom:100px}
+}
+
+@keyframes rise{from{opacity:.001;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero-copy>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.06s}.hero-copy>*:nth-child(3){animation-delay:.12s}.hero-copy>*:nth-child(4){animation-delay:.18s}.hero-copy>*:nth-child(5){animation-delay:.24s}
+</style>
+
+<header>
+  <nav class="wrap nav" aria-label="Asosiy">
+    <a href="#top" class="logo"><i aria-hidden="true"></i>Target Start</a>
+    <ul>
+      <li><a href="#ustoz">Ustoz</a></li>
+      <li><a href="#dastur">Dastur</a></li>
+      <li><a href="#fikrlar">Natijalar</a></li>
+      <li><a href="#tariflar">Tariflar</a></li>
+      <li><a href="#savollar">Savollar</a></li>
+    </ul>
+    <a href="#yozilish" class="btn btn-gold">Kursga yozilish</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="pill"><b>Qabul ochiq</b>Biznes egalari uchun target kursi</span>
+        <h1>Reklamani <span class="u">o'zingiz<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 50 2, 150 2, 198 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span> yoqing va mijoz oling</h1>
+        <p class="hero-lead">Instagram va Facebook'da reklamani noldan sozlashni 4 haftada o'rganasiz. <b>Nazariya emas, real biznesingiz ustida ishlaysiz</b>: har bir darsdan keyin amaliy topshiriq va tahlil.</p>
+        <div class="hero-cta">
+          <a href="#tariflar" class="btn btn-gold">Tarifni tanlash</a>
+          <a href="#dastur" class="btn btn-line">Kurs dasturi</a>
+        </div>
+        <div class="proof">
+          <div class="faces" aria-hidden="true"><span>M</span><span>S</span><span>H</span></div>
+          <p>O'quvchilar fikri: <b>"Oson tez o'rgandim, hammaga tavsiya qilardim"</b></p>
+        </div>
+      </div>
+      <div class="visual">
+        <figure class="photo">
+          <div class="circ"><img src="img/zahro-1.jpg" alt="Zahro, Target Start kursi ustozi, noutbuk bilan" width="853" height="1066"></div>
+          <figcaption><b>Zahro</b>Meta Ads targetolog</figcaption>
+        </figure>
+        <div class="float stat"><b>3 yil</b><span>amaliy tajriba</span></div>
+        <div class="float quote">
+          <span class="stars" aria-label="5 yulduz">★★★★★</span>
+          <p>"Erinmay tushuntirasiz, ancha-munchasi bunaqa tushuntirmaydi"</p>
+          <span>Sevara, o'quvchi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <ul class="wrap">
+      <li><b>4 hafta</b><span>kurs davomiyligi</span></li>
+      <li><b>4 modul</b><span>asosdan analitikagacha</span></li>
+      <li><b>3 tarif</b><span>onlayn va oflayn (Yunusobod)</span></li>
+      <li><b>6 oy</b><span>kursdan keyin yordam</span></li>
+    </ul>
+  </div>
+
+  <section class="sec" id="muammo">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Tanish holatmi?</span>
+        <h2>Reklamaga pul ketyapti, <span class="acc">mijoz kelmayapti</span></h2>
+      </div>
+      <div class="pains">
+        <article class="pain"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><h3>Pul ketdi, hech kim yozmadi</h3><p>"Reklama qilish" tugmasi bosilgan, lekin auditoriya va taklif o'ylanmagan.</p></article>
+        <article class="pain"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><h3>Akkaunt bloklandi</h3><p>Noto'g'ri ochilgan akkaunt va Business Manager tufayli reklama to'xtab qoladi.</p></article>
+        <article class="pain"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><h3>Raqamlarni tushunmayman</h3><p>Qaysi reklama ishlayapti, qaysi biri pulni yeyapti, bilib bo'lmaydi.</p></article>
+        <article class="pain"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><h3>Kimga ko'rsatishni bilmayman</h3><p>Reklama hammaga chiqadi, xaridor esa kelmaydi.</p></article>
+      </div>
+      <div class="turn">
+        <p>Muammo tugmada emas, <span>tizimda</span>. Target Start'da shu tizimni o'z biznesingizda qurasiz.</p>
+        <a href="#dastur" class="btn btn-gold">Dasturni ko'rish</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="ustoz">
+    <div class="wrap teacher">
+      <div class="teacher-photo">
+        <div class="circ"><img src="img/zahro-2.jpg" alt="Zahro, Meta Ads targetolog" loading="lazy" width="853" height="1066"></div>
+        <div class="tag"><b>Zahro</b>@zahroxon.ulugbekovna</div>
+      </div>
+      <div class="teacher-text">
+        <span class="label">Ustoz</span>
+        <h2>Salom, men <span class="acc">Zahro</span></h2>
+        <p>3 yildan beri O'zbekistondagi biznes egalariga Instagram va Facebook orqali mijoz topishda yordam beraman. Kursda <strong>o'zim har kuni ishlatadigan tizimni</strong> o'rgataman.</p>
+        <p>Ko'p biznes egalari reklamaga pul sarflab, natija ko'rmaydi. Sabab ko'pincha akkaunt, profil yoki auditoriyada bo'ladi. Target Start shu bo'laklarni bir tizimga yig'adi.</p>
+        <div class="facts">
+          <div><b>3 yil</b><span>amaliy tajriba</span></div>
+          <div><b>30+</b><span>biznes egasi bilan ishlaganman</span></div>
+          <div><b>10+</b><span>shogird chiqarganman</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="kimlar">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Kimlar uchun</span>
+        <h2>Bu kurs <span class="acc">sizga mosmi?</span></h2>
+      </div>
+      <div class="fit">
+        <div class="yes">
+          <h3>Mos keladi, agar</h3>
+          <ul>
+            <li>Kichik yoki o'rta biznesingiz bor: do'kon, xizmat, kafe, salon, onlayn savdo yoki ekspertlik.</li>
+            <li>Reklamani o'zingiz yoqib, targetologga har oy to'lamaslikni xohlaysiz.</li>
+            <li>Reklama yoqib ko'rgansiz, pul ketdi, lekin mijoz kelmadi.</li>
+            <li>Targetolog bilan ishlasangiz ham, uning ishini tushunib nazorat qilmoqchisiz.</li>
+          </ul>
+        </div>
+        <div class="no">
+          <h3>Mos kelmaydi, agar</h3>
+          <ul>
+            <li>Targetolog kasbini egallab, boshqalarga xizmat ko'rsatmoqchisiz. Buning uchun individual dars yoki shogirtlik bor, <a href="#yozilish">yozing</a>.</li>
+            <li>Hali biznesingiz yoki sotadigan mahsulotingiz yo'q.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="dastur">
+    <div class="wrap prog">
+      <div class="prog-side">
+        <div class="head" style="margin:0">
+          <span class="label">Kurs dasturi</span>
+          <h2>4 hafta, <span class="acc">4 modul</span></h2>
+        </div>
+        <p>Bu kursda nazariya emas, real biznesingiz ustida ishlaysiz. Har bir darsdan keyin amaliy topshiriq, individual tahlil va real reklama natijalari ko'rib chiqiladi.</p>
+        <p class="note">Individual tarzda, sizning tezligingizda, to'liq tushunguningizcha olib boriladi. Har bir bosqichda yoningizda shaxsiy mentor sifatida ustoz bo'ladi.</p>
+        <a href="#tariflar" class="btn btn-ink" style="justify-self:start">Tarifni tanlash</a>
+      </div>
+      <div class="mods">
+        <details class="mod" open><summary><h3><span class="wk">1-hafta</span>Asosni to'g'ri qo'yish</h3></summary>
+          <ul>
+            <li><b>Facebook akkaunti ochish va professional tarzda qadoqlash</b>Noto'g'ri sozlangan akkaunt reklamangiz yurmay qolishiga sabab bo'lishi mumkin. Bunga yo'l qo'ymaymiz.</li>
+            <li><b>Instagram sahifani sotuvchi uslubda tayyorlash</b>Profil dizayni va bio orqali auditoriyani birinchi daqiqadanoq jalb qilish texnikalarini o'rganasiz.</li>
+          </ul></details>
+        <details class="mod"><summary><h3><span class="wk">2-hafta</span>Texnik bazani to'liq o'zlashtirish</h3></summary>
+          <ul>
+            <li><b>Business Manager ochish va bloklardan himoyalanish</b>Reklama bloklari tufayli mablag'ingiz yo'qolmasligi uchun xavfsiz tizim yaratamiz.</li>
+            <li><b>Reklama akkaunti ochish va Instagramni to'g'ri ulash</b>Bir nechta sahifani bir joydan boshqarish imkonini qo'lga kiritasiz.</li>
+            <li><b>Billing tizimi va to'lov kartalari bilan ishlash</b>Ortiqcha xarajatsiz va xavfsiz to'lov tizimini to'g'ri yo'lga qo'yamiz.</li>
+          </ul></details>
+        <details class="mod"><summary><h3><span class="wk">3-hafta</span>Reklama strategiyalari</h3></summary>
+          <ul>
+            <li><b>Reklama maqsadlarini to'g'ri tanlash</b>Tanilish, trafik, xabarlar yoki lid olish: har bir maqsad uchun mos strategiyani ishlab chiqamiz.</li>
+            <li><b>Intereslar bilan ishlash va to'g'ri auditoriyani aniqlash</b>Biznes yo'nalishingizga mos auditoriyani aniq topishni o'rganasiz.</li>
+            <li><b>CBO, retarget va lookalike reklamalari</b>Algoritmlarga to'g'ri moslangan reklama natijaning 80% garovi.</li>
+          </ul></details>
+        <details class="mod"><summary><h3><span class="wk">4-hafta</span>Analitika va mijoz psixologiyasi</h3></summary>
+          <ul>
+            <li><b>Reklama tahlili va kreativlarni analiz qilish</b>Nega bir reklama yuradi, boshqasi yo'q? Sabablarini birgalikda tahlil qilamiz.</li>
+            <li><b>TOF, MOF, BOF auditoriyalarni tushunish</b>Sovuq, iliq va issiq auditoriya bilan ishlash strategiyalarini o'zlashtirasiz.</li>
+            <li><b>Mijoz portretini tuzish</b>Aniq mijoz portreti har qanday reklamaning muvaffaqiyat kaliti.</li>
+          </ul></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="natija">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Kursdan keyin</span>
+        <h2>4 haftadan keyin <span class="acc">siz</span></h2>
+      </div>
+      <ul class="outs">
+        <li><b>Akkauntlarni to'g'ri ochasiz</b><span>Facebook akkaunt, Business Manager va reklama kabineti bloklardan himoyalangan holda.</span></li>
+        <li><b>Instagramni sotuvchi qilasiz</b><span>Profil dizayni va bio birinchi daqiqadanoq mijozni ushlab qoladi.</span></li>
+        <li><b>To'lovni xavfsiz yo'lga qo'yasiz</b><span>Billing va kartalar bilan ishlashda pulingiz yo'qolmaydi.</span></li>
+        <li><b>To'g'ri maqsad va auditoriya tanlaysiz</b><span>Tanilish, trafik, xabarlar yoki lid: biznesingizga mos strategiya.</span></li>
+        <li><b>Retarget va lookalike ishlatasiz</b><span>CBO, retarget va o'xshash auditoriyalar bilan algoritmni o'zingizga ishlatasiz.</span></li>
+        <li><b>Reklamani tahlil qilasiz</b><span>Kreativlarni, sovuq-iliq-issiq auditoriyani va mijoz portretini tushunasiz.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec alt" id="fikrlar">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">O'quvchilar fikri</span>
+        <h2>Har bir o'quvchi <span class="acc">savoliga javob oladi</span></h2>
+        <p>O'quvchilarning Telegramdagi haqiqiy yozishmalari. Kattalashtirish uchun rasmni bosing.</p>
+      </div>
+      <div class="vrev">
+        <div class="vids">
+          <figure><video src="video/onlayn-otziv.mp4" poster="video/poster2.jpg" controls muted autoplay loop playsinline preload="metadata" width="720" height="960" aria-label="Onlayn kurs o'quvchisining otzivi"></video><figcaption>Onlayn kurs o'quvchisi</figcaption></figure>
+          <figure><video src="video/konsultatsiya.mp4" poster="video/poster.jpg" controls muted autoplay loop playsinline preload="metadata" width="360" height="640" aria-label="Oflayn konsultatsiyadan video otziv"></video><figcaption>Oflayn konsultatsiyadan keyin</figcaption></figure>
+        </div>
+        <div class="vrev-text">
+          <span class="label">Video otzivlar</span>
+          <h3>Onlayn ham bemalol o'rganishyapti</h3>
+          <p>Mijoz va o'quvchilarning o'z so'zlari, montajsiz. Ovozni yoqish uchun videoni bosing.</p>
+          <a href="#tariflar" class="btn btn-gold" style="justify-self:start">Tarifni tanlash</a>
+        </div>
+      </div>
+      <div class="revs">
+        <a class="rev" href="img/otziv-5.jpg" target="_blank" rel="noopener"><img src="img/otziv-5.jpg" alt="Target Start kursidan otziv, o'quvchi Nozima: hamma narsa tushunarli, har bir savolga javob berasiz" loading="lazy" width="590" height="798"></a>
+        <a class="rev" href="img/otziv-1.jpg" target="_blank" rel="noopener"><img src="img/otziv-1.jpg" alt="Onlayn kurs o'quvchisi Muhayyo: tushunarli qilib o'tdingiz, endi o'zim qila olaman" loading="lazy" width="720" height="959"></a>
+        <a class="rev" href="img/otziv-2.jpg" target="_blank" rel="noopener"><img src="img/otziv-2.jpg" alt="Onlayn biznesi bor o'quvchi: bolalar kiyimi do'koni, kursdan keyin rahmat aytdi" loading="lazy" width="720" height="959"></a>
+        <a class="rev" href="img/otziv-3.jpg" target="_blank" rel="noopener"><img src="img/otziv-3.jpg" alt="Shogird Sevara loyihalarga reklama yoqishni boshladi" loading="lazy" width="720" height="959"></a>
+        <a class="rev" href="img/otziv-4.jpg" target="_blank" rel="noopener"><img src="img/otziv-4.jpg" alt="O'quvchi Hadicha: oson va tez o'rgandim, hammaga tavsiya qilaman" loading="lazy" width="720" height="959"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="tariflar">
+    <div class="wrap">
+      <div class="head c">
+        <span class="label">Tariflar</span>
+        <h2>O'zingizga qulay <span class="acc">formatni tanlang</span></h2>
+        <p>Dastur hamma tarifda bir xil. Farqi ustoz bilan qanday ishlashingizda. Kurs narxining 50% ini to'lab boshlashingiz mumkin.</p>
+      </div>
+      <div class="tarifs">
+        <article class="tarif">
+          <span class="kind">Onlayn</span>
+          <h3>Standart</h3>
+          <p class="lead">O'z vaqtingizda o'rganasiz, savollarga guruhda javob olasiz.</p>
+          <ul>
+            <li>4 modul video darslar, darsliklar kanalida</li>
+            <li>To'lovdan keyin darhol boshlaysiz</li>
+            <li>Amaliy topshiriqlar</li>
+            <li>Savollarga guruhda javob, 6 oygacha</li>
+            <li class="off">Ustoz bilan 1 ga 1 ishlash yo'q</li>
+          </ul>
+          <div class="foot">
+            <div class="price"><span>Narxi</span><b>499 000 so'm</b></div>
+            <a href="#yozilish" class="btn btn-line" data-tarif="Onlayn Standart">Standartni tanlash</a>
+          </div>
+        </article>
+        <article class="tarif best">
+          <span class="badge">Tavsiya qilaman</span>
+          <span class="kind">Onlayn</span>
+          <h3>Premium</h3>
+          <p class="lead">Ustoz bilan 1 ga 1 ishlaysiz, har bir savolingizga shaxsan javob olasiz.</p>
+          <ul>
+            <li>Standartdagi hamma narsa</li>
+            <li>Ustoz bilan 1 ga 1 jonli darslar, shaxsiy mentor</li>
+            <li>Har darsdan keyin individual tahlil</li>
+            <li>Real reklamangiz natijalarini birga ko'ramiz</li>
+            <li>6 oygacha savollarga javob</li>
+          </ul>
+          <div class="foot">
+            <div class="price"><span>Narxi</span><b>599 000 so'm</b></div>
+            <a href="#yozilish" class="btn btn-gold" data-tarif="Onlayn Premium">Premiumni tanlash</a>
+          </div>
+        </article>
+        <article class="tarif">
+          <span class="kind">Oflayn</span>
+          <h3>Jonli</h3>
+          <p class="lead">Ustoz bilan bir xonada: 4 ta jonli uchrashuv.</p>
+          <ul>
+            <li>Ustoz bilan 4 ta oflayn uchrashuv</li>
+            <li>To'lovdan keyin individual boshlanadi</li>
+            <li>Bonus: onlayn darsliklar kanali</li>
+            <li>Reklamangizni darsda birga yoqamiz</li>
+            <li>6 oygacha savollarga javob</li>
+            <li>Toshkent, Yunusobod tumani</li>
+          </ul>
+          <div class="foot">
+            <div class="price"><span>Narxi</span><b>100 $</b></div>
+            <a href="#yozilish" class="btn btn-line" data-tarif="Oflayn">Oflaynni tanlash</a>
+          </div>
+        </article>
+      </div>
+      <div class="common"><span>4 hafta</span><span>4 modul</span><span>Real biznesingiz ustida</span><span>6 oy qo'llab-quvvatlash</span><span>50% to'lov bilan boshlash mumkin</span><span>Noutbuk kerak</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="jarayon">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Qanday boshlanadi</span>
+        <h2>Arizadan <span class="acc">birinchi reklamagacha</span></h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Ariza qoldirasiz</h3><p>Ismingiz, raqamingiz va tarif. 1 daqiqa.</p></li>
+        <li><h3>Qo'ng'iroq qilamiz</h3><p>Biznesingizni bilib, qaysi tarif mosligini birga aniqlaymiz.</p></li>
+        <li><h3>To'lov va boshlanish</h3><p>To'lovdan keyin darsliklar kanaliga qo'shilasiz.</p></li>
+        <li><h3>4 hafta amaliyot</h3><p>4 modul, topshiriqlar va o'z biznesingizda reklama.</p></li>
+        <li><h3>6 oy yordam</h3><p>Kursdan keyin ham savollaringizga javob olasiz.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec alt" id="savollar">
+    <div class="wrap faq-grid">
+      <div class="head" style="margin:0">
+        <span class="label">Savol-javob</span>
+        <h2>Ko'p so'raladigan <span class="acc">savollar</span></h2>
+        <p>Javob topmadingizmi? Qo'ng'iroq qiling: +998 90 157 93 95</p>
+      </div>
+      <div class="faq">
+        <details open><summary>Oldin hech qachon reklama yoqmaganman. Tushunamanmi?</summary><p>Ha. Kurs noldan boshlanadi: Facebook akkaunt ochishdan tortib reklamani tahlil qilishgacha hammasi qadamma-qadam ko'rsatiladi.</p></details>
+        <details><summary>Standart va Premium farqi nima?</summary><p>Darslar bir xil. Standartda (499 000 so'm) o'z vaqtingizda o'rganasiz, savollaringizga guruhda javob beriladi. Premiumda (599 000 so'm) ustoz bilan 1 ga 1 ishlaysiz: jonli darslar, individual tahlil va har bir savolga shaxsan javob.</p></details>
+        <details><summary>Kurs qachon boshlanadi?</summary><p>Guruh yig'ilishini kutmaysiz. Onlayn ham, oflayn ham to'lovdan keyin individual boshlanadi. Oflayn darslar Toshkent, Yunusobod tumanida.</p></details>
+        <details><summary>Akkauntim bloklanib qolmaydimi?</summary><p>1 va 2-modulda akkaunt va Business Manager'ni bloklardan himoyalangan holda to'g'ri ochishni o'rganasiz.</p></details>
+        <details><summary>Noutbuk kerakmi yoki telefon yetadimi?</summary><p>Noutbuk kerak. Kursdagi darslar faqat noutbuk bilan ishlanadi, chunki reklama kabineti va Business Manager bilan to'liq ishlash kompyuterda bo'ladi.</p></details>
+        <details><summary>Kursdan keyin savol tug'ilsa nima qilaman?</summary><p>Kurs tugagandan keyin ham 6 oygacha savollaringizga javob beriladi.</p></details>
+        <details><summary>To'lovni bo'lib to'lash mumkinmi?</summary><p>Ha. Kurs narxining 50% ini to'lab, darslarni boshlashingiz mumkin. Qolgan qismi kurs davomida to'lanadi.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="yozilish">
+    <div class="wrap signup">
+      <div class="intro">
+        <span class="label">Ro'yxatdan o'tish</span>
+        <h2>Joyingizni <span class="acc">band qiling</span></h2>
+        <p>Ariza qoldiring, qo'ng'iroq qilib tarifni tanlashga yordam beramiz.</p>
+        <div class="links">
+          <div><span>Telefon</span><b>+998 90 157 93 95</b></div>
+          <a href="https://instagram.com/zahroxon.ulugbekovna" target="_blank" rel="noopener"><span>Instagram</span><b>@zahroxon.ulugbekovna</b></a>
+          <a href="https://t.me/zahroxon_digitalmarketing" target="_blank" rel="noopener"><span>Telegram kanal</span><b>t.me/zahroxon_digitalmarketing</b></a>
+          <div><span>Oflayn kurs</span><b>Toshkent, Yunusobod tumani</b></div>
+        </div>
+      </div>
+      <form id="lead" novalidate>
+        <h3>Kursga ariza</h3>
+        <label for="f-name">Ismingiz<input id="f-name" name="name" autocomplete="name" placeholder="Ismingiz" required></label>
+        <label for="f-phone">Telefon raqamingiz<input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67" required></label>
+        <span class="err" id="phone-err" hidden>Raqamni +998 bilan, 9 ta raqam qilib yozing. Masalan: +998 90 123 45 67</span>
+        <label for="f-tarif">Tarif
+          <select id="f-tarif" name="tarif">
+            <option>Onlayn Premium</option>
+            <option>Onlayn Standart</option>
+            <option>Oflayn</option>
+            <option>Hali bilmayman, maslahat kerak</option>
+          </select>
+        </label>
+        <label for="f-biz">Biznesingiz sohasi <small>(ixtiyoriy)</small><input id="f-biz" name="biz" placeholder="Masalan: kiyim do'koni"></label>
+        <button class="btn btn-gold" id="send" type="submit">Ariza qoldirish</button>
+        <p class="msg" id="msg" hidden></p>
+        <p class="fine">Ma'lumotlaringiz faqat siz bilan bog'lanish uchun ishlatiladi.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Target Start · Zahro, Meta Ads targetolog</span><span>O'zbekiston</span></div>
+</footer>
+
+<div class="mcta"><a href="#yozilish" class="btn btn-gold">Kursga yozilish</a></div>
+
+<!--
+  Meta Pixel: PIXEL_ID ni o'z pixel raqamingizga almashtirib, shu izohni olib tashlang.
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','PIXEL_ID');fbq('track','PageView');
+</script>
+-->
+<script>
+// Google Apps Script web app manzili (apps-script.gs ni joylagandan keyin shu yerga qo'ying)
+var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx_cBz6nSrBY32k3XURQ2wv5Nl-1-tLqktgmb3AmGHzmviTILpSIzhgyNFMKzMoNah1xg/exec";
+
+function track(ev, data){ try{ if(window.fbq) window.fbq('track', ev, data||{}); }catch(e){} }
+
+document.querySelectorAll('[data-tarif]').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('f-tarif').value = a.dataset.tarif; track('ViewContent',{content_name:a.dataset.tarif}); });
+});
+
+var utm = {};
+try{ new URLSearchParams(location.search).forEach(function(v,k){ if(k.indexOf('utm_')===0) utm[k]=v; }); }catch(e){}
+
+function normPhone(v){
+  var d = v.replace(/\D/g,'');
+  if(d.length===9) d = '998'+d;
+  return /^998\d{9}$/.test(d) ? '+'+d : null;
+}
+
+document.getElementById('lead').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target, msg = document.getElementById('msg'), btn = document.getElementById('send');
+  var name = f.name.value.trim(), phone = normPhone(f.phone.value);
+  f.name.setAttribute('aria-invalid', name ? 'false' : 'true');
+  f.phone.setAttribute('aria-invalid', phone ? 'false' : 'true');
+  document.getElementById('phone-err').hidden = !!phone;
+  if(!name || !phone){ (name ? f.phone : f.name).focus(); return; }
+
+  var body = new URLSearchParams(Object.assign({
+    name:name, phone:phone, tarif:f.tarif.value, biz:f.biz.value.trim(), page:location.href
+  }, utm));
+
+  function done(){
+    msg.className = 'msg good'; msg.hidden = false;
+    msg.innerHTML = '<b>Rahmat, ' + name.replace(/[<>&]/g,'') + '!</b> Arizangiz qabul qilindi. 24 soat ichida qo\'ng\'iroq qilamiz.';
+    f.reset(); btn.disabled = false; track('Lead',{content_name:body.get('tarif')});
+  }
+  function fail(){
+    msg.className = 'msg'; msg.hidden = false;
+    msg.innerHTML = 'Ariza yuborilmadi. Iltimos, to\'g\'ridan-to\'g\'ri qo\'ng\'iroq qiling: <b>+998 90 157 93 95</b>';
+    btn.disabled = false;
+  }
+  if(!SCRIPT_URL){ fail(); return; }
+  btn.disabled = true;
+  fetch(SCRIPT_URL, {method:'POST', mode:'no-cors', body:body}).then(done).catch(fail);
+});
+</script>
